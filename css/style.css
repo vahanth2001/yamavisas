@@ -278,7 +278,7 @@ nav>a:hover{color:var(--gold)}
   background-position: center;
   background-repeat: no-repeat;;
   color:#fff;
-  padding: 7% 0 1% 0;
+  padding: 180px 0 20px 0;
 }
 .hero-grid{
   display:grid;
@@ -344,7 +344,7 @@ nav>a:hover{color:var(--gold)}
 .contact-hero {
   background: var(--navy-dark);
   color: white;
-  padding: 7% 0;
+  padding: 180px 0;
 }
 
 .contact-hero-grid {
@@ -774,7 +774,7 @@ nav>a:hover{color:var(--gold)}
 .about-hero {
   background: var(--navy-dark);
   color: white;
-  padding: 7%;
+  padding: 180px 0;
   overflow: hidden;
 }
 
@@ -1634,11 +1634,13 @@ nav>a:hover{color:var(--gold)}
     linear-gradient(
       120deg,
       rgba(9, 30, 45, 1),
-      rgba(16, 43, 63, 0.96)
-    );
-
+      rgba(16, 43, 63, 0.6)
+    ),url("../yamacard.png");
+     background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #ffffff;
-  padding: 7% 0;
+  padding: 180px 0;
 }
 
 
