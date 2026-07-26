@@ -272,7 +272,11 @@ nav>a:hover{color:var(--gold)}
   font-size:1.7rem;
 }
 .hero{
-  background:linear-gradient(115deg,rgba(9,30,45,.98),rgba(16,43,63,.93));
+  background:linear-gradient(115deg,rgba(9,30,45,1),rgba(16,43,63,.6)),url("../yamacard.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;;
   color:#fff;
   padding: 7% 0 1% 0;
 }
