@@ -1274,3 +1274,906 @@
 .site-logo {
     max-width: 100px;
 }
+
+/* ==========================================================
+   SERVICES & FEES PAGE
+========================================================== */
+
+.active-link {
+  color: var(--gold);
+}
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.services-hero {
+  background:
+    linear-gradient(
+      120deg,
+      rgba(9, 30, 45, 1),
+      rgba(16, 43, 63, 0.96)
+    );
+
+  color: #ffffff;
+  padding: 105px 0;
+}
+
+
+.services-hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 90px;
+  align-items: center;
+}
+
+
+.services-hero-content h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 6vw, 5.2rem);
+  font-weight: normal;
+  line-height: 1.04;
+  max-width: 850px;
+}
+
+
+.services-hero-content h1 span {
+  display: block;
+  color: #d7b57c;
+}
+
+
+.services-hero-lead {
+  color: #cfdae0;
+  max-width: 700px;
+  font-size: 1.08rem;
+  line-height: 1.8;
+  margin-top: 28px;
+}
+
+
+.services-hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+
+.services-whatsapp-outline {
+  display: inline-block;
+  padding: 14px 22px;
+
+  border: 1px solid rgba(255,255,255,0.4);
+
+  color: #ffffff;
+  font-weight: bold;
+
+  transition: 0.2s ease;
+}
+
+
+.services-whatsapp-outline:hover {
+  border-color: var(--gold);
+  color: #d7b57c;
+}
+
+
+
+/* ==========================================================
+   HERO FEES CARD
+========================================================== */
+
+.hero-fees-card {
+  background: #ffffff;
+  color: var(--text);
+  padding: 45px;
+}
+
+
+.hero-fees-label {
+  display: block;
+
+  color: var(--gold);
+
+  font-size: 0.68rem;
+  font-weight: bold;
+  letter-spacing: 0.16em;
+
+  margin-bottom: 12px;
+}
+
+
+.hero-fees-card h2 {
+  color: var(--navy);
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 1.25;
+
+  margin-bottom: 20px;
+}
+
+
+.hero-fees-card > p {
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+
+.whatsapp-primary-button {
+  display: grid;
+  grid-template-columns: 35px 1fr auto;
+  gap: 13px;
+  align-items: center;
+
+  background: var(--navy);
+  color: #ffffff;
+
+  padding: 16px 18px;
+  margin-top: 28px;
+
+  transition: 0.2s ease;
+}
+
+
+.whatsapp-primary-button:hover {
+  background: var(--gold);
+}
+
+
+.whatsapp-symbol {
+  font-size: 1.4rem;
+}
+
+
+.whatsapp-primary-button small {
+  display: block;
+
+  font-size: 0.58rem;
+  letter-spacing: 0.13em;
+
+  opacity: 0.7;
+}
+
+
+.whatsapp-primary-button strong {
+  font-size: 1.3rem;
+}
+
+
+
+/* ==========================================================
+   INTRODUCTION
+========================================================== */
+
+.services-introduction {
+  padding: 100px 0;
+}
+
+
+.services-introduction-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 100px;
+}
+
+
+.services-introduction-copy {
+  border-left: 1px solid var(--border);
+  padding-left: 50px;
+}
+
+
+.services-introduction-copy p {
+  color: var(--muted);
+  font-size: 1.03rem;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+
+
+/* ==========================================================
+   SERVICE NAVIGATION
+========================================================== */
+
+.service-navigation {
+  background: var(--cream);
+  padding: 35px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+
+.service-navigation-label {
+  color: var(--gold);
+
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+
+  margin-bottom: 15px;
+}
+
+
+.service-navigation-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+
+.service-navigation-links a {
+  background: #ffffff;
+
+  border: 1px solid var(--border);
+
+  color: var(--navy);
+
+  padding: 9px 14px;
+
+  font-size: 0.78rem;
+
+  transition: 0.2s ease;
+}
+
+
+.service-navigation-links a:hover {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: #ffffff;
+}
+
+
+
+/* ==========================================================
+   DETAILED SERVICES
+========================================================== */
+
+.detailed-services-section {
+  padding: 20px 0 100px;
+}
+
+
+.detailed-service {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 60px;
+
+  padding: 85px 0;
+
+  border-bottom: 1px solid var(--border);
+
+  scroll-margin-top: 110px;
+}
+
+
+.service-side {
+  border-right: 1px solid var(--border);
+  padding-right: 35px;
+}
+
+
+.service-big-number {
+  display: block;
+
+  color: #d4b27b;
+
+  font-family: Georgia, serif;
+  font-size: 3.4rem;
+  line-height: 1;
+}
+
+
+.service-type {
+  display: block;
+
+  color: var(--muted);
+
+  font-size: 0.63rem;
+  font-weight: bold;
+  letter-spacing: 0.13em;
+
+  margin-top: 15px;
+}
+
+
+.service-main {
+  max-width: 900px;
+}
+
+
+.service-main h2 {
+  color: var(--navy);
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: normal;
+  line-height: 1.2;
+
+  margin-bottom: 20px;
+}
+
+
+.service-lead {
+  color: var(--navy);
+
+  font-family: Georgia, serif;
+  font-size: 1.25rem;
+  line-height: 1.65;
+
+  margin-bottom: 15px;
+}
+
+
+.service-main > p:not(.service-lead) {
+  color: var(--muted);
+
+  font-size: 0.97rem;
+  line-height: 1.75;
+
+  max-width: 800px;
+}
+
+
+.service-main h3 {
+  color: var(--navy);
+
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+
+  margin: 35px 0 18px;
+}
+
+
+
+/* ==========================================================
+   SERVICE CHECKLIST
+========================================================== */
+
+.service-check-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  border-top: 1px solid var(--border);
+}
+
+
+.service-check-grid span {
+  position: relative;
+
+  color: var(--text);
+
+  padding: 14px 20px 14px 27px;
+
+  border-bottom: 1px solid var(--border);
+
+  font-size: 0.88rem;
+}
+
+
+.service-check-grid span:nth-child(odd) {
+  border-right: 1px solid var(--border);
+}
+
+
+.service-check-grid span::before {
+  content: "✓";
+
+  position: absolute;
+  left: 3px;
+
+  color: var(--gold);
+  font-weight: bold;
+}
+
+
+
+/* ==========================================================
+   FEE ACTION
+========================================================== */
+
+.service-fee-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  background: var(--cream);
+
+  padding: 25px 28px;
+  margin-top: 35px;
+
+  border-left: 3px solid var(--gold);
+}
+
+
+.service-fee-action > div {
+  max-width: 520px;
+}
+
+
+.service-fee-action > div > span {
+  display: block;
+
+  color: var(--gold);
+
+  font-size: 0.62rem;
+  font-weight: bold;
+  letter-spacing: 0.13em;
+
+  margin-bottom: 5px;
+}
+
+
+.service-fee-action p {
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+
+.service-chat-button {
+  display: inline-block;
+
+  background: var(--navy);
+  color: #ffffff;
+
+  padding: 13px 18px;
+
+  font-size: 0.82rem;
+  font-weight: bold;
+
+  white-space: nowrap;
+
+  transition: 0.2s ease;
+}
+
+
+.service-chat-button:hover {
+  background: var(--gold);
+}
+
+
+
+/* ==========================================================
+   BUSINESS SERVICE ACCENT
+========================================================== */
+
+.service-business .service-big-number {
+  color: var(--navy);
+}
+
+
+.service-business .service-side {
+  border-right-color: #d7b57c;
+}
+
+
+
+/* ==========================================================
+   FEES EXPLANATION
+========================================================== */
+
+.fees-explanation-section {
+  background: var(--cream);
+  padding: 105px 0;
+}
+
+
+.fees-explanation-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 100px;
+}
+
+
+.fees-explanation-content > p {
+  color: var(--muted);
+
+  font-size: 1rem;
+  line-height: 1.8;
+
+  margin-bottom: 20px;
+}
+
+
+.fees-important-note {
+  background: #ffffff;
+
+  border-left: 3px solid var(--gold);
+
+  padding: 25px 28px;
+  margin: 35px 0;
+}
+
+
+.fees-important-note strong {
+  display: block;
+
+  color: var(--navy);
+
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+
+  margin-bottom: 8px;
+}
+
+
+.fees-important-note p {
+  color: var(--muted);
+
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+
+.whatsapp-large-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  background: var(--navy);
+  color: #ffffff;
+
+  padding: 18px 22px;
+
+  font-weight: bold;
+
+  transition: 0.2s ease;
+}
+
+
+.whatsapp-large-button:hover {
+  background: var(--gold);
+}
+
+
+
+/* ==========================================================
+   PROCESS
+========================================================== */
+
+.services-process-section {
+  padding: 105px 0;
+}
+
+
+.services-process-heading {
+  max-width: 650px;
+  margin-bottom: 55px;
+}
+
+
+.services-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+.services-process-grid article {
+  min-height: 270px;
+
+  padding: 30px;
+
+  border-left: 1px solid var(--border);
+}
+
+
+.services-process-grid article:last-child {
+  border-right: 1px solid var(--border);
+}
+
+
+.services-process-grid article > span {
+  color: var(--gold);
+
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+
+.services-process-grid h3 {
+  color: var(--navy);
+
+  font-family: Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: normal;
+
+  margin: 25px 0 12px;
+}
+
+
+.services-process-grid p {
+  color: var(--muted);
+
+  font-size: 0.87rem;
+  line-height: 1.7;
+}
+
+
+
+/* ==========================================================
+   FINAL CTA
+========================================================== */
+
+.services-final-cta {
+  background: var(--navy);
+  color: #ffffff;
+
+  padding: 75px 0;
+}
+
+
+.services-final-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+}
+
+
+.services-final-cta h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: normal;
+
+  max-width: 720px;
+}
+
+
+.services-final-cta p {
+  color: #c3d0d6;
+
+  max-width: 700px;
+
+  margin-top: 10px;
+}
+
+
+.final-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  min-width: 230px;
+
+  gap: 15px;
+}
+
+
+.final-contact-link {
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+
+.final-contact-link:hover {
+  color: var(--gold);
+}
+
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 950px) {
+
+  .services-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+
+  .hero-fees-card {
+    max-width: 650px;
+  }
+
+
+  .services-introduction-grid,
+  .fees-explanation-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+
+  .services-introduction-copy {
+    border-left: 0;
+    border-top: 1px solid var(--border);
+
+    padding-left: 0;
+    padding-top: 35px;
+  }
+
+
+  .detailed-service {
+    grid-template-columns: 120px 1fr;
+    gap: 40px;
+  }
+
+
+  .services-process-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .services-process-grid article:nth-child(3) {
+    border-top: 1px solid var(--border);
+  }
+
+
+  .services-process-grid article:nth-child(4) {
+    border-top: 1px solid var(--border);
+  }
+
+
+  .services-final-cta-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  .final-cta-buttons {
+    width: 100%;
+    max-width: 350px;
+  }
+
+}
+
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 650px) {
+
+  .services-hero {
+    padding: 70px 0;
+  }
+
+
+  .services-hero-content h1 {
+    font-size: 2.75rem;
+  }
+
+
+  .services-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+
+  .services-hero-actions a {
+    text-align: center;
+  }
+
+
+  .hero-fees-card {
+    padding: 30px 25px;
+  }
+
+
+  .services-introduction {
+    padding: 75px 0;
+  }
+
+
+  .service-navigation {
+    padding: 28px 0;
+  }
+
+
+  .service-navigation-links {
+    gap: 7px;
+  }
+
+
+  .service-navigation-links a {
+    font-size: 0.72rem;
+  }
+
+
+  .detailed-services-section {
+    padding-bottom: 75px;
+  }
+
+
+  .detailed-service {
+    display: block;
+    padding: 65px 0;
+
+    scroll-margin-top: 90px;
+  }
+
+
+  .service-side {
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+
+    padding-right: 0;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+
+
+  .service-big-number {
+    font-size: 2.7rem;
+  }
+
+
+  .service-main h2 {
+    font-size: 2rem;
+  }
+
+
+  .service-lead {
+    font-size: 1.1rem;
+  }
+
+
+  .service-check-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .service-check-grid span:nth-child(odd) {
+    border-right: 0;
+  }
+
+
+  .service-fee-action {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 22px;
+  }
+
+
+  .service-chat-button {
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .fees-explanation-section,
+  .services-process-section {
+    padding: 75px 0;
+  }
+
+
+  .services-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .services-process-grid article {
+    min-height: auto;
+
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+
+  .services-process-grid article:nth-child(3),
+  .services-process-grid article:nth-child(4) {
+    border-top: 0;
+  }
+
+
+  .services-final-cta {
+    padding: 65px 0;
+  }
+
+}
