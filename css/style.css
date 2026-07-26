@@ -1272,9 +1272,12 @@
 }
 
 .site-logo {
-    max-width: 100px;
+    max-width: 150px;
 }
 
+.footer-logo {
+    max-width: 200px;
+}
 /* ==========================================================
    SERVICES & FEES PAGE
 ========================================================== */
@@ -2174,6 +2177,441 @@
 
   .services-final-cta {
     padding: 65px 0;
+  }
+
+}
+/* =========================================================
+   PRIVACY PAGE
+========================================================= */
+
+.privacy-hero {
+  background: var(--navy-dark);
+  color: #ffffff;
+  padding: 90px 0;
+}
+
+.privacy-hero-inner {
+  max-width: 850px;
+}
+
+.privacy-hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: normal;
+  line-height: 1.05;
+}
+
+.privacy-hero h1 span {
+  color: #d7b57c;
+}
+
+.privacy-hero-inner > p:not(.eyebrow) {
+  color: #cbd6dc;
+  max-width: 750px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-top: 25px;
+}
+
+.privacy-updated {
+  margin-top: 30px;
+  color: #91a4ae;
+  font-size: 0.75rem;
+}
+
+
+/* CONTENT */
+
+.privacy-section {
+  padding: 100px 0;
+}
+
+.privacy-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 90px;
+  align-items: start;
+}
+
+
+/* SIDE NAVIGATION */
+
+.privacy-navigation {
+  position: sticky;
+  top: 115px;
+  border-left: 1px solid var(--border);
+  padding-left: 25px;
+}
+
+.privacy-navigation span {
+  display: block;
+  color: var(--gold);
+  font-size: 0.62rem;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  margin-bottom: 15px;
+}
+
+.privacy-navigation a {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+  padding: 6px 0;
+}
+
+.privacy-navigation a:hover {
+  color: var(--gold);
+}
+
+
+/* PRIVACY BLOCK */
+
+.privacy-content {
+  max-width: 820px;
+}
+
+.privacy-block {
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid var(--border);
+  scroll-margin-top: 120px;
+}
+
+.privacy-number {
+  display: block;
+  color: var(--gold);
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.privacy-block h2 {
+  color: var(--navy);
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.privacy-block h3 {
+  color: var(--navy);
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin: 30px 0 10px;
+}
+
+.privacy-block p {
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 17px;
+}
+
+.privacy-block ul {
+  margin: 20px 0 25px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.privacy-block li {
+  position: relative;
+  color: var(--text);
+  padding: 10px 0 10px 25px;
+  border-bottom: 1px solid var(--border);
+}
+
+.privacy-block li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}
+
+
+/* NOTE */
+
+.privacy-note {
+  background: var(--cream);
+  border-left: 3px solid var(--gold);
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.privacy-note strong {
+  display: block;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.privacy-note p {
+  margin: 0;
+  font-size: 0.87rem;
+}
+
+
+/* CONTACT */
+
+.privacy-contact-card {
+  background: var(--cream);
+  border-left: 3px solid var(--gold);
+  padding: 28px;
+  margin: 25px 0 35px;
+}
+
+.privacy-contact-card h3 {
+  margin: 0 0 15px;
+}
+
+.privacy-contact-card p {
+  margin-bottom: 15px;
+}
+
+.privacy-contact-card a {
+  display: block;
+  color: var(--navy);
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+
+/* CHANGE COOKIE SETTINGS */
+
+.cookie-settings-button {
+  border: 0;
+  background: var(--navy);
+  color: #ffffff;
+  padding: 14px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.cookie-settings-button:hover {
+  background: var(--gold);
+}
+
+
+/* PRIVACY CTA */
+
+.privacy-cta {
+  background: var(--navy);
+  color: #ffffff;
+  padding: 70px 0;
+}
+
+.privacy-cta-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.privacy-cta h2 {
+  font-family: Georgia, serif;
+  font-size: 2.3rem;
+  font-weight: normal;
+}
+
+.privacy-cta p:not(.eyebrow) {
+  color: #c5d0d6;
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   COOKIE BANNER
+========================================================= */
+
+.cookie-banner {
+  position: fixed;
+  z-index: 99999;
+
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+
+  display: none;
+
+  max-width: 1180px;
+  margin: auto;
+
+  background: #ffffff;
+
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--gold);
+
+  box-shadow: 0 15px 60px rgba(9, 30, 45, 0.25);
+}
+
+.cookie-banner.cookie-visible {
+  display: block;
+}
+
+.cookie-banner-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: center;
+  padding: 28px 32px;
+}
+
+.cookie-label {
+  display: block;
+  color: var(--gold);
+  font-size: 0.62rem;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  margin-bottom: 5px;
+}
+
+.cookie-content h2 {
+  color: var(--navy);
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-bottom: 7px;
+}
+
+.cookie-content p {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+.cookie-content a {
+  color: var(--gold);
+  font-weight: bold;
+}
+
+.cookie-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.cookie-button {
+  border: 0;
+  padding: 13px 17px;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.cookie-accept {
+  background: var(--navy);
+  color: #ffffff;
+}
+
+.cookie-accept:hover {
+  background: var(--gold);
+}
+
+.cookie-reject {
+  background: var(--cream);
+  color: var(--navy);
+  border: 1px solid var(--border);
+}
+
+.cookie-reject:hover {
+  border-color: var(--navy);
+}
+
+
+/* FOOTER COOKIE BUTTON */
+
+.footer-cookie-button {
+  display: block;
+  border: 0;
+  background: transparent;
+  color: #aebbc2;
+  padding: 0;
+  margin: 8px 0;
+  font-family: inherit;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+
+.footer-cookie-button:hover {
+  color: var(--gold);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .privacy-layout {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .privacy-navigation {
+    position: static;
+    border-left: 0;
+    border-bottom: 1px solid var(--border);
+    padding: 0 0 25px;
+  }
+
+  .privacy-navigation a {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  .cookie-banner-inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .privacy-hero {
+    padding: 65px 0;
+  }
+
+  .privacy-hero h1 {
+    font-size: 2.7rem;
+  }
+
+  .privacy-section {
+    padding: 70px 0;
+  }
+
+  .privacy-block {
+    margin-bottom: 45px;
+    padding-bottom: 45px;
+  }
+
+  .privacy-block h2 {
+    font-size: 1.7rem;
+  }
+
+  .privacy-cta-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cookie-banner {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .cookie-banner-inner {
+    padding: 22px;
+  }
+
+  .cookie-actions {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .cookie-button {
+    width: 100%;
   }
 
 }
