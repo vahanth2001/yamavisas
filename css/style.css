@@ -422,3 +422,426 @@
   }
 
 }
+/* ========================================
+   ABOUT PAGE
+======================================== */
+
+.active-link {
+  color: var(--gold);
+}
+
+
+/* HERO */
+
+.about-hero {
+  background: var(--navy-dark);
+  color: white;
+  padding: 100px 0 110px;
+  overflow: hidden;
+}
+
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+
+/* FOUNDER PHOTO */
+
+.about-photo-column {
+  position: relative;
+}
+
+.about-photo-frame {
+  position: relative;
+  max-width: 470px;
+}
+
+.about-photo-frame img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.photo-accent {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  left: -25px;
+  bottom: -25px;
+  border: 1px solid rgba(185, 138, 69, 0.55);
+  z-index: 1;
+}
+
+.adviser-mini-card {
+  position: absolute;
+  right: -25px;
+  bottom: 35px;
+  z-index: 3;
+  width: 250px;
+  background: white;
+  color: var(--navy);
+  padding: 22px 25px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.mini-card-label {
+  display: block;
+  color: var(--gold);
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.16em;
+  margin-bottom: 6px;
+}
+
+.adviser-mini-card strong {
+  display: block;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+
+/* HERO CONTENT */
+
+.about-hero-content h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: normal;
+  line-height: 1.02;
+  max-width: 800px;
+}
+
+.about-hero-content h1 span {
+  display: block;
+  color: #d7b57c;
+}
+
+.about-role {
+  color: #bac7cd;
+  margin-top: 17px;
+  font-size: 1.05rem;
+}
+
+.about-intro-line {
+  width: 65px;
+  height: 1px;
+  background: var(--gold);
+  margin: 32px 0;
+}
+
+.about-lead {
+  font-family: Georgia, serif;
+  font-size: 1.45rem;
+  line-height: 1.55;
+  color: white;
+  max-width: 700px;
+  margin-bottom: 25px;
+}
+
+.about-copy {
+  color: #c4d0d6;
+  max-width: 730px;
+  margin-bottom: 17px;
+}
+
+.about-actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 35px;
+}
+
+.about-secondary-link {
+  color: white;
+  font-weight: bold;
+}
+
+.about-secondary-link:hover {
+  color: var(--gold);
+}
+
+
+/* STORY */
+
+.about-story-section {
+  padding: 110px 0;
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 100px;
+}
+
+.about-story-copy {
+  border-left: 1px solid var(--border);
+  padding-left: 50px;
+}
+
+.about-story-copy p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin-bottom: 22px;
+}
+
+
+/* VALUES */
+
+.about-values-section {
+  background: var(--cream);
+  padding: 105px 0;
+}
+
+.about-values-heading {
+  max-width: 700px;
+  margin-bottom: 55px;
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.about-value-card {
+  background: white;
+  padding: 42px;
+  border-right: 1px solid var(--border);
+  min-height: 300px;
+}
+
+.about-value-card:last-child {
+  border-right: none;
+}
+
+.about-value-card > span {
+  color: var(--gold);
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.about-value-card h3 {
+  color: var(--navy);
+  font-family: Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: normal;
+  margin: 35px 0 15px;
+}
+
+.about-value-card p {
+  color: var(--muted);
+}
+
+
+/* PRACTICE */
+
+.practice-section {
+  padding: 110px 0;
+}
+
+.practice-heading {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 60px;
+}
+
+.practice-heading > p {
+  color: var(--muted);
+  max-width: 450px;
+}
+
+.practice-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--border);
+}
+
+.practice-card {
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  gap: 20px;
+  padding: 32px 25px 32px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.practice-card:nth-child(odd) {
+  border-right: 1px solid var(--border);
+  padding-right: 45px;
+}
+
+.practice-card:nth-child(even) {
+  padding-left: 45px;
+}
+
+.practice-number {
+  color: var(--gold);
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.practice-card h3 {
+  color: var(--navy);
+  font-family: Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+.practice-card p {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.practice-button-row {
+  margin-top: 45px;
+}
+
+
+/* FOUNDER QUOTE */
+
+.founder-quote-section {
+  background: var(--cream);
+  padding: 100px 0;
+}
+
+.founder-quote-inner {
+  max-width: 900px;
+  text-align: center;
+}
+
+.quote-mark {
+  font-family: Georgia, serif;
+  color: var(--gold);
+  font-size: 6rem;
+  line-height: 0.7;
+}
+
+.founder-quote-inner blockquote {
+  color: var(--navy);
+  font-family: Georgia, serif;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  line-height: 1.4;
+  margin: 25px auto 35px;
+}
+
+.quote-person strong {
+  display: block;
+  color: var(--navy);
+}
+
+.quote-person span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+
+/* ========================================
+   ABOUT RESPONSIVE
+======================================== */
+
+@media (max-width: 950px) {
+
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 75px;
+  }
+
+  .about-photo-column {
+    max-width: 500px;
+  }
+
+  .about-story-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about-story-copy {
+    border-left: 0;
+    border-top: 1px solid var(--border);
+    padding-left: 0;
+    padding-top: 35px;
+  }
+
+  .practice-heading {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+}
+
+
+@media (max-width: 750px) {
+
+  .about-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-value-card {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .practice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .practice-card,
+  .practice-card:nth-child(odd),
+  .practice-card:nth-child(even) {
+    border-right: none;
+    padding: 28px 0;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .about-hero {
+    padding: 65px 0 80px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 2.7rem;
+  }
+
+  .about-photo-frame {
+    width: calc(100% - 15px);
+  }
+
+  .photo-accent {
+    left: 15px;
+    bottom: -15px;
+  }
+
+  .adviser-mini-card {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: calc(100% - 30px);
+    margin: -25px 0 0 30px;
+  }
+
+  .about-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-story-section,
+  .about-values-section,
+  .practice-section,
+  .founder-quote-section {
+    padding: 75px 0;
+  }
+
+}
