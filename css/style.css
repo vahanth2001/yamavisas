@@ -2955,3 +2955,44 @@ nav>a:hover{color:var(--gold)}
   }
 
 }
+/* =========================================
+   FOOTER REGULATORY INFORMATION
+========================================== */
+
+.footer-regulatory-info {
+  margin-top: 35px;
+  padding: 28px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-regulatory-info p {
+  max-width: 1050px;
+
+  color: #9eafb8;
+
+  font-size: 0.76rem;
+  line-height: 1.8;
+
+  margin: 5px 0;
+}
+
+.footer-regulatory-info strong {
+  color: #d5dee2;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+
+  .footer-regulatory-info {
+    margin-top: 25px;
+    padding: 22px 0;
+  }
+
+  .footer-regulatory-info p {
+    font-size: 0.72rem;
+    line-height: 1.75;
+  }
+
+}
