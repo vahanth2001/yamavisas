@@ -46,7 +46,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
-$to = "guna2001work@gmail.com";
+$to = "sri@yamavisas.co.uk";
 
 $subject = "New Consultation Request - Yama Visas";
 
